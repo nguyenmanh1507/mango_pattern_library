@@ -5,11 +5,12 @@
 
 .l-sidebar {
   flex-basis: 245px;
-  min-width: 245px;
+  width: 245px;
 }
 
 .l-main {
   flex-grow: 1;
+  width: calc(100% - 245px);
 }
 
 .l-center {

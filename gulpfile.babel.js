@@ -4,6 +4,7 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+import autoprefixer from 'autoprefixer';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -51,7 +52,7 @@ gulp.task('styles', () => {
         cssnano
       ];
 
-  return gulp.src(['app/styles/main.css', 'app/styles/pattern.css')])
+  return gulp.src(['app/styles/main.css', 'app/styles/pattern.css'])
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.postcss(processors))

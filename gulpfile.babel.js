@@ -56,7 +56,7 @@ gulp.task('styles', () => {
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.postcss(processors))
-    .pipe($.sourcemaps.write())
+    .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });

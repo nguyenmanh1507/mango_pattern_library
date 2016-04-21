@@ -1,0 +1,12 @@
+/* COLORS */
+$white: #FFFFFF;
+$flush-mahogany: #CC4635;
+$charade: #2C2E3E;
+$matisse: #155B92;
+$givry: #F9DBC4;
+
+$color-primary: $flush-mahogany;
+$color-secondary: $white;
+
+$color-text: $charade;
+$color-link: $matisse;

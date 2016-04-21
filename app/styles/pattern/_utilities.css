@@ -1,0 +1,47 @@
+@b pl {
+  color: $color-text;
+
+  a {
+    color: $color-link;
+  }
+
+  @e title {
+    padding-bottom: calc(1rem);
+    margin-top: 0;
+
+    color: $color-text;
+  }
+
+  @e rule {
+    height: 2px;
+
+    background: $color-text;
+
+    border: none;
+  }
+
+  @e block {
+    padding: 1rem 0;
+  }
+
+  @e notes {
+    padding: calc(1em * 0.8);
+
+    background: color($charade a(10%));
+    border-radius: 6px;
+  }
+
+  @e example {
+    margin: calc(1em * 2) 0 calc(1em * 6);
+  }
+
+  @e example-title {
+    padding-bottom: calc(1em / 2);
+    margin: 0;
+
+    color: $color-primary;
+    text-transform: uppercase;
+
+    border-bottom: 2px solid currentColor;
+  }
+}

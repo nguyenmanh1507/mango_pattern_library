@@ -1,0 +1,21 @@
+.l-container {
+  display: flex;
+  min-height: 100%;
+}
+
+.l-sidebar {
+  flex-basis: 245px;
+}
+
+.l-main {
+  flex-grow: 1;
+}
+
+.l-center {
+  justify-content: space-between;
+}
+
+.l-half {
+  flex-basis: 49%;
+  width: 49%;
+}

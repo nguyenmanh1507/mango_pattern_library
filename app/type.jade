@@ -1,0 +1,153 @@
+extends layouts/default
+
+block content
+  h1.pl__title Type
+  hr.pl__rule
+  
+  .pl__example
+    p.pl__example-title H1
+    .pl__block
+      h1 I am a first time buyer.
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | Appears only once at the top of any given page
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = "<h1>I am a first time buyer.</h1>"
+
+  .pl__example
+    p.pl__example-title H2
+    .pl__block
+      h2 I am a first time buyer.
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | Used as a heading for a piece of content within a page
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = "<h2>I am a first time buyer.</h2>"
+  
+  .pl__example
+    p.pl__example-title H3
+    .pl__block
+      h3 I am a first time buyer.
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | Used as a heading for a piece of content within a page and panels
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = "<h3>I am a first time buyer.</h3>"
+
+  .pl__example
+    p.pl__example-title H4
+    .pl__block
+      h4 I am a first time buyer.
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | Used as a heading for a piece of content within a page and panels
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = "<h4>I am a first time buyer.</h4>"
+              
+  .pl__example
+    p.pl__example-title Link
+    .pl__block
+      a(href="#") We have 100 branches around the country
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | Use to link off to other pages that are not the primary route from the page
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<a href="/branches/">We have 100 branches around the country</a>'
+              
+  .pl__example
+    p.pl__example-title Ul
+    .pl__block
+      ul
+        li Fixed rate mortgages
+        li Tracker mortgages
+        li Mortgages for existing customers
+        li Mortgage rates
+        li Mortgage calculators
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | Used for an unordered list of items. This can also contain links
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = "<ul>\n"
+              = "  <li>Fixed rate mortgages</li>\n"
+              = "  <li>Tracker mortgages</li>\n"
+              = "  <li>Mortgages for existing customers</li>\n"
+              = "  <li>Mortgage rates</li>\n"
+              = "  <li>Mortgage calculators</li>\n"
+              = "</ul>"
+              
+  .pl__example
+    p.pl__example-title Ol
+    .pl__block
+      ol
+        li Fixed rate mortgages
+        li Tracker mortgages
+        li Mortgages for existing customers
+        li Mortgage rates
+        li Mortgage calculators
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | Used for a numbered list of items, or a set of instructions. This can also contain links.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = "<ol>\n"
+              = "  <li>Fixed rate mortgages</li>\n"
+              = "  <li>Tracker mortgages</li>\n"
+              = "  <li>Mortgages for existing customers</li>\n"
+              = "  <li>Mortgage rates</li>\n"
+              = "  <li>Mortgage calculators</li>\n"
+              = "</ol>"

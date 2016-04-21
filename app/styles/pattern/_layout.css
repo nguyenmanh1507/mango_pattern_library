@@ -5,6 +5,7 @@
 
 .l-sidebar {
   flex-basis: 245px;
+  min-width: 245px;
 }
 
 .l-main {

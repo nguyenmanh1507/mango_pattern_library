@@ -1,0 +1,101 @@
+extends layouts/default
+
+block content
+  h1.pl__title Buttons
+  hr.pl__rule
+  
+  .pl__example
+    p.pl__example-title Buttons tags
+    .pl__block
+      a.btn(href="#") Link
+      button.btn(type="submit") Button
+      input.btn(type="submit", value="Input")
+
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<a class="btn" href="#">Link</a>\n'
+              = '<button class="btn" type="submit">Button</button>\n'
+              = '<input class="btn" type="submit" value="Input">'
+
+  .pl__example
+    p.pl__example-title Options
+    .pl__block
+      button.btn.btn--primary Primary
+      button.btn.btn--success Success
+      button.btn.btn--info Info
+      button.btn.btn--warning Warning
+      button.btn.btn--danger Danger
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<button class="btn btn--primary">Primary</button>\n'
+              = '<button class="btn btn--success">Success</button>\n'
+              = '<button class="btn btn--info">Info</button>\n'
+              = '<button class="btn btn--warning">Warning</button>\n'
+              = '<button class="btn btn--danger">Danger</button>'
+
+  .pl__example
+    p.pl__example-title Sizes
+    .pl__block
+      p
+        button.btn.btn--lg Large button
+        button.btn.btn--primary.btn--lg Large button
+      
+      p
+        button.btn Default button
+        button.btn.btn--primary Default button
+      
+      p
+        button.btn.btn--sm Small button
+        button.btn.btn--primary.btn--sm Small button
+      
+      p
+        button.btn.btn--xs Extra small button
+        button.btn.btn--primary.btn--xs Extra small button
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<p>\n'
+              = '  <button class="btn btn--lg">Large button</button>\n'
+              = '  <button class="btn btn--primary btn--lg">Large button</button>\n'
+              = '</p>\n'
+              = '<p>\n'
+              = '  <button class="btn">Default button</button>\n'
+              = '  <button class="btn btn--primary">Default button</button>\n'
+              = '</p>\n'
+              = '<p>\n'
+              = '  <button class="btn btn--sm">Small button</button>\n'
+              = '  <button class="btn btn--primary btn--sm">Small button</button>\n'
+              = '</p>\n'
+              = '<p>\n'
+              = '  <button class="btn btn--xs">Extra small button</button>\n'
+              = '  <button class="btn btn--primary btn--xs">Extra small button</button>\n'
+              = '</p>'
+              

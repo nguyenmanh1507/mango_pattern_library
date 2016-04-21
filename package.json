@@ -32,6 +32,7 @@
     "postcss-bem": "^0.4.1",
     "postcss-custom-media": "^5.0.1",
     "postcss-font-magician": "^1.4.0",
+    "postcss-nested": "^1.0.0",
     "postcss-pxtorem": "^3.3.1",
     "precss": "^1.4.0",
     "stylelint": "^6.0.2",

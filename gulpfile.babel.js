@@ -21,7 +21,6 @@ gulp.task('views', () => {
 gulp.task('styles', () => {
   let bem          = require('postcss-bem'),
       precss       = require('precss'),
-      cssnano      = require('cssnano'),
       fontMagician = require('postcss-font-magician'),
       pxtorem      = require('postcss-pxtorem'),
       nested       = require('postcss-nested'),
@@ -48,14 +47,14 @@ gulp.task('styles', () => {
         }),
         customMedia,
         at2x,
-        autoprefixer,
-        cssnano
+        autoprefixer
       ];
 
   return gulp.src(['app/styles/main.css', 'app/styles/pattern.css'])
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.postcss(processors))
+    .pipe($.cssnano({discardComments: {removeAll: true}}))
     .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));

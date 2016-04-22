@@ -1,0 +1,80 @@
+extends layouts/default
+
+block content
+  h1.pl__title Forms
+  hr.pl__rule
+
+  .pl__example
+    p.pl__example-title Basic example
+    .pl__block
+      form.f(action="/")
+        .f__group
+          label(for="exampleInputEmail") Email address
+          input.f__control#exampleInputEmail(type="email", placeholder="Email")
+        .f__group
+          label(for="exampleInputPassword") Password
+          input.f__control#exampleInputPassword(type="password", placeholder="Password")
+        .checkbox
+          label
+            input(type="checkbox")
+            |  Option 1
+          label
+            input(type="checkbox")
+            |  Option 2
+          label
+            input(type="checkbox")
+            |  Option 3
+        .radio
+          label
+            input(type="radio", name="optionsRadios", checked)
+            |  Option 1
+          label
+            input(type="radio", name="optionsRadios")
+            |  Option 2
+          label
+            input(type="radio", name="optionsRadios")
+            |  Option 3
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<form action="/" class="f">\n'
+              = '  <div class="f__group">\n'
+              = '    <label for="exampleInputEmail">Email address</label>\n'
+              = '    <input id="exampleInputEmail" type="email" placeholder="Email" class="f__control">\n'
+              = '  </div>\n'
+              = '  <div class="f__group">\n'
+              = '    <label for="exampleInputPassword">Password</label>\n'
+              = '    <input id="exampleInputPassword" type="password" placeholder="Password" class="f__control">\n'
+              = '  </div>\n'
+              = '  <div class="checkbox">\n'
+              = '    <label>\n'
+              = '      <input type="checkbox"> Option 1\n'
+              = '    </label>\n'
+              = '    <label>\n'
+              = '      <input type="checkbox"> Option 2\n'
+              = '    </label>\n'
+              = '    <label>\n'
+              = '      <input type="checkbox"> Option 3\n'
+              = '    </label>\n'
+              = '  </div>\n'
+              = '  <div class="radio">\n'
+              = '    <label>\n'
+              = '      <input type="radio" name="optionsRadios" checked=""> Option 1\n'
+              = '    </label>\n'
+              = '    <label>\n'
+              = '       <input type="radio" name="optionsRadios"> Option 2\n'
+              = '    </label>\n'
+              = '    <label>\n'
+              = '      <input type="radio" name="optionsRadios"> Option 3\n'
+              = '    </label>\n'
+              = '  </div>\n'
+              = '</form>\n'

@@ -1,0 +1,48 @@
+extends layouts/default
+
+block content
+  h1.pl__title Tables
+  hr.pl__rule
+
+  .pl__example
+    p.pl__example-title Basic example
+    .pl__block
+      table.table
+        caption Optional table caption.
+        thead
+          tr
+            th #
+            th First name
+            th Last name
+            th User name
+        tbody
+          tr
+            th(scope="row") 1
+            td Mark
+            td Otto
+            td @mdo
+          tr
+            th(scope="row") 2
+            td Jacob
+            td Thornton
+            td @fat
+          tr
+            th(scope="row") 3
+            td Larry
+            td Bird
+            td @twitter
+    
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<table class="table">\n'
+              = '  ...\n'
+              = '</table>'

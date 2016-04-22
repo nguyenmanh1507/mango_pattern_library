@@ -1,0 +1,28 @@
+extends layouts/default
+
+block content
+  h1.pl__title Panels
+  hr.pl__rule
+  
+  .pl__example
+    p.pl__example-title Basic example
+    .pl__block
+      panel.panel
+        .panel__body Basic panel example
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<div class="panel">\n'
+              = '  <div class="panel__body">\n'
+              = '    Basic panel example\n'
+              = '  </div>\n'
+              = '</div>'

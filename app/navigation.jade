@@ -1,0 +1,32 @@
+extends layouts/default
+
+block content
+  h1.pl__title Navigation
+  hr.pl__rule
+  
+  .pl__example
+    p.pl__example-title Default nav
+    .pl__block
+      nav.nav
+        a(href="#") Home
+        a(href="#") About Us
+        a(href="#") Pricing
+        a(href="#") Contact
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<nav class="nav">\n'
+              = '  <a href="/">Home</a>\n'
+              = '  <a href="/about-us">About Us</a>\n'
+              = '  <a href="/pricing">Pricing</a>\n'
+              = '  <a href="/contact">Contact</a>\n'
+              = '</nav>'

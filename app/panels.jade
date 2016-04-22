@@ -7,7 +7,7 @@ block content
   .pl__example
     p.pl__example-title Basic example
     .pl__block
-      panel.panel
+      .panel
         .panel__body Basic panel example
       
     .l-container.l-center
@@ -22,6 +22,46 @@ block content
           pre.language-markup
             code.language-markup
               = '<div class="panel">\n'
+              = '  <div class="panel__body">\n'
+              = '    Basic panel example\n'
+              = '  </div>\n'
+              = '</div>'
+  
+  .pl__example
+    p.pl__example-title Panel with heading
+    .pl__block
+      .panel
+        .panel__heading Panel heading without title
+        .panel__body Panel content
+      .panel
+        .panel__heading
+          h3.panel__title Panel title
+        .panel__body Panel content
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<div class="panel">\n'
+              = '  <div class="panel__heading">\n'
+              = '    Panel heading without title'
+              = '  </div>\n'
+              = '  <div class="panel__body">\n'
+              = '    Basic panel example\n'
+              = '  </div>\n'
+              = '</div>\n'
+              = '\n'
+              = '<div class="panel">\n'
+              = '  <div class="panel__heading">\n'
+              = '    <h3 class="panel__title">Panel title</h3>\n'
+              = '  </div>\n'
               = '  <div class="panel__body">\n'
               = '    Basic panel example\n'
               = '  </div>\n'

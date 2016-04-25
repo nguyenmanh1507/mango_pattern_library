@@ -55,6 +55,7 @@
 @b swatch {
   position: relative;
 
+  min-height: 90px;
   max-width: 300px;
   width: 100%;
   padding-left: 90px;

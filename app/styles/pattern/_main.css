@@ -2,5 +2,9 @@
 
   @e main {
     padding: calc(1rem * 2);
+
+    @media (--medium-viewport) {
+      padding: calc(1rem);
+    }
   }
 }

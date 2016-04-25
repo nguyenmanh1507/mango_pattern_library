@@ -66,3 +66,28 @@ block content
               = '    Basic panel example\n'
               = '  </div>\n'
               = '</div>'
+              
+  .pl__example
+    p.pl__example-title Panel with footer
+    .pl__block
+      .panel
+        .panel__body Panel content
+        .panel__footer Panel footer
+      
+    .l-container.l-center
+      .l-half
+        .pl__notes
+          strong When to use
+          p
+            | There is currently no usage notes at the moment.
+        
+      .l-half
+        .pl__code
+          pre.language-markup
+            code.language-markup
+              = '<div class="panel">\n'
+              = '  <div class="panel__body">\n'
+              = '    Basic panel example\n'
+              = '  </div>\n'
+              = '  <div class="panel__footer">Panel footer</div>\n'
+              = '</div>'

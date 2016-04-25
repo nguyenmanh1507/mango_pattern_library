@@ -10,3 +10,7 @@ $color-secondary: $white;
 
 $color-text: $charade;
 $color-link: $matisse;
+
+/* VIEWPORT */
+@custom-media --medium-viewport (max-width: 970px);
+@custom-media --small-viewport (max-width: 700px);

@@ -108,6 +108,23 @@
   }
 }
 
+.mobile-menu {
+  display: none;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+
+  color: $color-secondary;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background: $color-primary;
+  border-radius: 6px;
+
+  @media (--medium-viewport) {
+    display: inline-block;
+  }
+}
+
 pre[class*="language-"] {
   margin: 0;
 
